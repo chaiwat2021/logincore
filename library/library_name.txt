@@ -1,0 +1,5 @@
+﻿Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer.Design
+
+Scaffold-DbContext "Server=SQL SERVER (e.g localhost);Database=DATABASE (e.g db_corelogin);Trusted_Connection=True;user id=SQL USERNAME;password=SQL PASSWORD;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/DB
