@@ -1,4 +1,4 @@
-## Web API for .NET Core
+## Login and Register Page for .NET Core
 **Developer Tools**
 - Microsoft Visual Studio Community 2017
 - Microsoft SQL Server Express 2016 Service Pack 2
