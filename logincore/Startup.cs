@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using logincore.Models.DB;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace logincore
 {
@@ -31,6 +34,8 @@ namespace logincore
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            // [Asma Khalid]: Register SQL database configuration context as services.    
+            services.AddDbContext<db_coreloginContext>(options => options.UseSqlServer(Configuration.GetConnectionString("db_corelogin")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
