@@ -1,0 +1,6 @@
+﻿== Migration Command ==
+Package Manager Console > Add-Migration IdentityDBUser
+Visual Studio Code Terminal > dotnet ef migration add IdentityDBUser
+
+Package Manager Console > Update-Database
+Visual Studio Code Terminal > dotnet ef database update
